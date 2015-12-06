@@ -1,0 +1,4 @@
+*.tlog
+bin/write_directory/log.htm
+Test.sdf
+Test.opensdf
