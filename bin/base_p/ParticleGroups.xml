@@ -1,0 +1,10 @@
+<Groups>
+    <group name="Common">
+        <texture path="Textures/Particles/fire.JPG" />
+        <texture path="Textures/Particles/adot.png" />
+        <texture path="Textures/Particles/smoke.png" />
+        <texture path="Textures/Particles/star.jpg" />
+        <texture path="Textures/Particles/star.png" />
+        <texture path="Textures/Particles/4star.jpg" />
+    </group>
+</Groups>

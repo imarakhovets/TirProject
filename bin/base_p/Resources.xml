@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Resources>
+  
+<FreeTypeFonts group="TestGroup" upload="false">
+  <font name="default" family="arial" size="12" color="255;255;255;255" letterSpacing="0">
+    <Effect alpha="0.1" type="shadow" blurX="2" blurY="2" strength="50" angle="0" inner="false" color="0;0;0;255" offset="0"/>
+  </font>
+</FreeTypeFonts>
+
+	<Textures>
+    <texture id="Gun" path="textures/gun.png" group="TestGroup" upload="true"/>
+    <texture id="Muzzle" path="textures/muzzle.png" group="TestGroup" upload="true"/>
+    <texture id="Kernel" path="textures/kernel.png" group="TestGroup" upload="true"/>
+    <texture id="Target" path="textures/target.png" group="TestGroup" upload="true"/>
+    <texture id="Billboard" path="textures/billboard.png" group="TestGroup" upload="true"/>
+    <texture id="Back" path="textures/back.jpg" group="TestGroup" upload="true"/>
+	</Textures>
+  
+  <Sounds group="TestGroup">
+    <!-- задаём список звуков, каждому звуку в этом списка назначаем группу GardenSound-->
+    <sample id="Shot" path="sounds/shot.ogg" mode="cache" mix="20" volumeFactor="0.01" pan="0"/>
+    <sample id="Meh_1" path="sounds/meh_1.ogg" mode="cache" mix="2" volumeFactor="0.01" pan="0"/>
+    <sample id="Boom" path="sounds/boom.ogg" mode="cache" mix="20" volumeFactor="0.01" pan="0"/>
+    <sample id="Rikoshet" path="sounds/rikoshet.ogg" mode="cache" mix="20" volumeFactor="0.01" pan="0"/>
+  </Sounds>
+
+</Resources>

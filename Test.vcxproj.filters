@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Objects">
+      <UniqueIdentifier>{e471b83d-9ef8-455b-93b5-5ed371826995}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects\physx">
+      <UniqueIdentifier>{f394af98-c606-4e0b-b883-e0db0c31313a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Objects">
+      <UniqueIdentifier>{54f7e12e-38e5-4fd1-9f41-f72ebeb13329}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects\physx">
+      <UniqueIdentifier>{a82bbe6f-57b9-429d-8442-c22a2d1e04e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{501063c3-4f74-426b-a7ef-fb2a733c4de7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XML">
+      <UniqueIdentifier>{2a38f773-1e15-4d1e-9f56-0a11f4cca78c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Gun.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TirSpace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Billboard.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Border.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Bullet.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Target.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TriggerGame.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PhysxBox.cpp">
+      <Filter>Source Files\Objects\physx</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PhysxCircle.cpp">
+      <Filter>Source Files\Objects\physx</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PhysxObject.cpp">
+      <Filter>Source Files\Objects\physx</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PhysxSide.cpp">
+      <Filter>Source Files\Objects\physx</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PhysxSpace.cpp">
+      <Filter>Source Files\Objects\physx</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stdafx.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TestAppDelegate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Gun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MyApplication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TirSpace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Billboard.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Border.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bullet.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Target.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TriggerGame.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PhysxBox.h">
+      <Filter>Header Files\Objects\physx</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PhysxCircle.h">
+      <Filter>Header Files\Objects\physx</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PhysxObject.h">
+      <Filter>Header Files\Objects\physx</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PhysxSide.h">
+      <Filter>Header Files\Objects\physx</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PhysxSpace.h">
+      <Filter>Header Files\Objects\physx</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TestAppDelegate.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\base_p\startup.lua">
+      <Filter>Scripts</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="bin\base_p\Layers.xml">
+      <Filter>XML</Filter>
+    </Xml>
+    <Xml Include="bin\base_p\Resources.xml">
+      <Filter>XML</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>
