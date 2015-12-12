@@ -82,10 +82,7 @@ void Gun::Update(float dt)
 			float x = math::cos(_angle + math::PI/2);
 			math::Vector3 _direct3(x,y,0);
 
-
 			new Bullet(position + baseOffsetPos + FPoint(_direct3.x * 110,_direct3.y * 110).Rounded(), FPoint(_direct3.x,_direct3.y)*_bulletSpeed);
-			//else
-			//	MM::manager.FadeSample(_soundShut,0.5,0);
 			_rollback = 25;
 		}
 	}
