@@ -64,7 +64,6 @@ void Gun::Draw()
 
 void Gun::Update(float dt)
 {
-
 	//סענוכüבא
 	if ((bulletSpeed > 0) && ((_timer>0.1) && (_timerShut<=0) && (Core::mainInput.GetMouseLeftButton())))
 	{ 
