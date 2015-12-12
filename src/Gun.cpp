@@ -68,7 +68,7 @@ void Gun::Update(float dt)
 	//סענוכüבא
 	if ((bulletSpeed > 0) && ((_timer>0.1) && (_timerShut<=0) && (Core::mainInput.GetMouseLeftButton())))
 	{ 
-		_timerShut = 1.2;
+		_timerShut = 0.2;
 		MM::manager.PlaySample("Shot");
 		_bulletSpeed = bulletSpeed;
 	}
