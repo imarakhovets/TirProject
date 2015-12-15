@@ -20,7 +20,6 @@ void Billboard::Init()
 
 	_timer = 0;
 	_mass = 5.0;
-
 	_role = ROLE_BILLBOARD;
 }
 
