@@ -8,7 +8,6 @@ Billboard::Billboard(FPoint startPosition, FPoint Speed, int nTarget, int nHit)
 	_nHit = nHit;
 	_nTarget = nTarget;
 	_speed = Speed;
-
 	Init();
 }
 void Billboard::Init()
@@ -17,7 +16,6 @@ void Billboard::Init()
 	_tex2 = Core::resourceManager.Get<Render::Texture>("Target");
 	hWidth = _tex1->getBitmapRect().width/2;
 	hHeight = _tex1->getBitmapRect().height/2;
-
 	_timer = 0;
 	_mass = 5.0;
 	_role = ROLE_BILLBOARD;
