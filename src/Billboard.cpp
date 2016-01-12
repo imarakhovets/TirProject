@@ -12,7 +12,7 @@ Billboard::Billboard(FPoint startPosition, FPoint Speed, int nTarget, int nHit)
 }
 void Billboard::Init()
 {
-	_tex1 = Core::resourceManager.Get<Render::Texture>("Billboard_");
+	_tex1 = Core::resourceManager.Get<Render::Texture>("Billboard");
 	_tex2 = Core::resourceManager.Get<Render::Texture>("Target");
 	hWidth = _tex1->getBitmapRect().width/2;
 	hHeight = _tex1->getBitmapRect().height/2;

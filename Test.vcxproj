@@ -43,7 +43,7 @@
     <_ProjectFileVersion>14.0.23107.0</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(ProjectDir)\bin</OutDir>
+    <OutDir>$(ProjectDir)bin</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
@@ -58,7 +58,7 @@
     <ClCompile>
       <AdditionalOptions>/Zm150 %(AdditionalOptions)</AdditionalOptions>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\libs\boost;$(ProjectDir)..\libs\ogg\include;$(ProjectDir)..\libs\vorbis\include;$(ProjectDir)..\libs\theora\include;$(ProjectDir)..\libs\zlib\include;$(ProjectDir)..\libs\luabind\include;$(ProjectDir)..\libs\lua\include;$(ProjectDir)..\libs\jpeg\include;$(ProjectDir)..\libs\png\include;$(ProjectDir)..\libs\freetype\include;$(ProjectDir)..\libs\OpenAL\include;$(ProjectDir)..\libs\webp\include;$(ProjectDir)..\libs\PVRTC\Windows_x86_32\Lib;$(ProjectDir)..\libs\angle\include;$(ProjectDir)..\libs\pugixml\include;$(ProjectDir)..\engine\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)libs\boost;$(ProjectDir)libs\ogg\include;$(ProjectDir)libs\vorbis\include;$(ProjectDir)libs\theora\include;$(ProjectDir)libs\zlib\include;$(ProjectDir)libs\luabind\include;$(ProjectDir)libs\lua\include;$(ProjectDir)libs\jpeg\include;$(ProjectDir)libs\png\include;$(ProjectDir)libs\freetype\include;$(ProjectDir)libs\OpenAL\include;$(ProjectDir)libs\webp\include;$(ProjectDir)libs\PVRTC\Windows_x86_32\Lib;$(ProjectDir)libs\angle\include;$(ProjectDir)libs\pugixml\include;$(ProjectDir)engine\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CRT_SECURE_NO_WARNINGS;DX9;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -74,8 +74,8 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>Version.lib;comctl32.lib;psapi.lib;shell32.lib;advapi32.lib;user32.lib;gdi32.lib;comdlg32.lib;luad.lib;luabindd.lib;pngd.lib;jpegd.lib;oggd.lib;vorbisd.lib;theorad.lib;zlibd.lib;engined.lib;freetyped.lib;libwebp.lib;pvrtc.lib;pugixmld.lib;OpenAL32.lib;libEGL.lib;libGLESv2.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(ProjectDir)\bin\$(ProjectName)_debug.exe</OutputFile>
-      <AdditionalLibraryDirectories>$(ProjectDir)..\libs\zlib\lib\vc14;$(ProjectDir)..\libs\jpeg\lib\vc14;$(ProjectDir)..\libs\png\lib\vc14;$(ProjectDir)..\libs\lua\lib\vc14;$(ProjectDir)..\libs\luabind\lib\vc14;$(ProjectDir)..\libs\ogg\lib\vc14;$(ProjectDir)..\libs\vorbis\lib\vc14;$(ProjectDir)..\libs\theora\lib\vc14;$(ProjectDir)..\libs\freetype\lib\vc14;$(ProjectDir)..\libs\openal\libs\Win32;$(ProjectDir)..\libs\boost\stage\lib;$(ProjectDir)..\libs\webp\lib\vc14;$(ProjectDir)..\libs\pugixml\lib\vc14;$(ProjectDir)..\libs\PVRTC\Windows_x86_32\Dll;$(ProjectDir)..\libs\angle\lib;$(ProjectDir)..\engine\lib\vc14;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(ProjectDir)bin\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(ProjectDir)libs\zlib\lib\vc14;$(ProjectDir)libs\jpeg\lib\vc14;$(ProjectDir)libs\png\lib\vc14;$(ProjectDir)libs\lua\lib\vc14;$(ProjectDir)libs\luabind\lib\vc14;$(ProjectDir)libs\ogg\lib\vc14;$(ProjectDir)libs\vorbis\lib\vc14;$(ProjectDir)libs\theora\lib\vc14;$(ProjectDir)libs\freetype\lib\vc14;$(ProjectDir)libs\openal\libs\Win32;$(ProjectDir)libs\boost\stage\lib;$(ProjectDir)libs\webp\lib\vc14;$(ProjectDir)libs\pugixml\lib\vc14;$(ProjectDir)libs\PVRTC\Windows_x86_32\Dll;$(ProjectDir)libs\angle\lib;$(ProjectDir)engine\lib\vc14;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>

@@ -2,3 +2,11 @@
 bin/write_directory/log.htm
 Test.sdf
 Test.opensdf
+libs/
+engine/
+bin/
+Debug/
+.vs/Test/v14/.suo
+Test.vcxproj.user
+ipch/TEST-9b668e15/ENGINETEST-89646262.ipch
+write_directory/log.htm
