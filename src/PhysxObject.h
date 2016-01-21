@@ -34,7 +34,8 @@ public:
 		BODY_SIDE,
 		BODY_NONE
 	} _body;
-
+	float _mass;
+	bool _stop;
 private:
 	virtual void getProjecToVector(math::Vector3 *vC, float *a, float *b) = 0;
 
@@ -45,12 +46,14 @@ protected:
 	FPoint _fPosition;
 	FPoint _lastSpeed;
 	FPoint _speed;
+	float _bounce;
 	bool _useGravity;
 
 	bool _autoDelete;
 	float _timeLive;
 	bool _delete;
-	float _mass;
+	
+
 	
 	static PhysxSpace* space;
 };

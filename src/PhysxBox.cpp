@@ -2,15 +2,20 @@
 #include "PhysxBox.h"
 
 
+PhysxBox::PhysxBox(const std::string& name)
+	: PhysxObject(name)
+{
+	_hWidth = 1;
+	_hHeight = 1;
+	_body = BODY_BOX;
+}
+
 PhysxBox::PhysxBox(const std::string& name, int hWidth, int hHeight)
 	: PhysxObject(name)
 {
 	 _hWidth = hWidth;
 	 _hHeight = hHeight;
 	_body = BODY_BOX;
-
-
-
 }
 
 void PhysxBox::getProjecToVector(math::Vector3 *vC, float *a, float *b)

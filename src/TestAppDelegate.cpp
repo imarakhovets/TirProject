@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "TestAppDelegate.h"
 
-#include "Gun.h"
+#include "Math3Space.h"
 #include "Target.h"
 #include "PhysxSpace.h"
 #include "TirSpace.h"
@@ -41,7 +41,7 @@ void TestAppDelegate::RegisterTypes()
 //	REGISTER_WIDGET_XML(TestWidget, "TestWidget");
 
 	REGISTER_WIDGET_XML(TirSpace, "TirSpace");
-	REGISTER_WIDGET_XML(Gun, "Gun");
+	REGISTER_WIDGET_XML(Math3Space, "Math3Space");
 }
 
 void TestAppDelegate::LoadResources()

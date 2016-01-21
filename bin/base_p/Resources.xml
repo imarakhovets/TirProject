@@ -8,13 +8,25 @@
 </FreeTypeFonts>
 
 	<Textures>
-    <texture id="Gun" path="textures/gun.png" group="TestGroup" upload="true"/>
-    <texture id="Muzzle" path="textures/muzzle.png" group="TestGroup" upload="true"/>
-    <texture id="Kernel" path="textures/kernel.png" group="TestGroup" upload="true"/>
     <texture id="Target" path="textures/target.png" group="TestGroup" upload="true"/>
-    <texture id="Billboard" path="textures/billboard.png" group="TestGroup" upload="true"/>
     <texture id="Back" path="textures/back.jpg" group="TestGroup" upload="true"/>
-	</Textures>
+
+    <texture id="apple" path="textures/chips/apple.png" group="TestGroup" upload="true"/>
+    <texture id="blackberry" path="textures/chips/blackberry.png" group="TestGroup" upload="true"/>
+    <texture id="flower" path="textures/chips/flower.png" group="TestGroup" upload="true"/>
+    <texture id="leaf" path="textures/chips/leaf.png" group="TestGroup" upload="true"/>
+    <texture id="pear" path="textures/chips/pear.png" group="TestGroup" upload="true"/>
+    <texture id="shadow" path="textures/shadow.png" group="TestGroup" upload="true"/>
+    <texture id="box" path="textures/box.png" group="TestGroup" upload="true"/>
+    <texture id="rock" path="textures/rock.png" group="TestGroup" upload="true"/>
+
+
+    <texture id="silver" path="textures/goals/silver_tile.png" group="TestGroup" upload="true"/>
+    <texture id="golden" path="textures/goals/golden_tile.png" group="TestGroup" upload="true"/>
+    <texture id="blackB" path="textures/Back/black.png" group="TestGroup" upload="true"/>
+    <texture id="blackW" path="textures/Back/white.png" group="TestGroup" upload="true"/>
+    
+  </Textures>
   
   <Sounds group="TestGroup">
     <!-- задаём список звуков, каждому звуку в этом списка назначаем группу GardenSound-->

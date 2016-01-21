@@ -117,13 +117,16 @@
     <ClCompile Include="src\Billboard.cpp" />
     <ClCompile Include="src\Border.cpp" />
     <ClCompile Include="src\Bullet.cpp" />
+    <ClCompile Include="src\Element.cpp" />
     <ClCompile Include="src\Gun.cpp" />
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Math3Space.cpp" />
     <ClCompile Include="src\PhysxBox.cpp" />
     <ClCompile Include="src\PhysxCircle.cpp" />
     <ClCompile Include="src\PhysxObject.cpp" />
     <ClCompile Include="src\PhysxSide.cpp" />
     <ClCompile Include="src\PhysxSpace.cpp" />
+    <ClCompile Include="src\Chip.cpp" />
     <ClCompile Include="src\stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -137,13 +140,18 @@
     <ClInclude Include="src\Billboard.h" />
     <ClInclude Include="src\Border.h" />
     <ClInclude Include="src\Bullet.h" />
+    <ClInclude Include="src\Element.h" />
     <ClInclude Include="src\Gun.h" />
+    <ClInclude Include="src\Math3Space.h" />
     <ClInclude Include="src\MyApplication.h" />
     <ClInclude Include="src\PhysxBox.h" />
     <ClInclude Include="src\PhysxCircle.h" />
     <ClInclude Include="src\PhysxObject.h" />
     <ClInclude Include="src\PhysxSide.h" />
     <ClInclude Include="src\PhysxSpace.h" />
+    <ClInclude Include="src\Chip.h" />
+    <ClInclude Include="src\StaticArray.h" />
+    <ClInclude Include="src\StaticArray2D.h" />
     <ClInclude Include="src\stdafx.h" />
     <ClInclude Include="src\Target.h" />
     <ClInclude Include="src\TestAppDelegate.h" />

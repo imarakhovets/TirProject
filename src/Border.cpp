@@ -6,18 +6,19 @@ Border::Border(FPoint position, FPoint direction)
 {
 	_role = ROLE_BORDER;
 	_mass = 1000000.0;
+	_bounce = 0.1;
 }
 
 
 void Border::Draw() 
 {
-#ifdef DEBUG
+#ifdef _DEBUG
 	if (_role !=ROLE_BORDER) return;
 	Render::device.PushMatrix();
 	Render::device.SetTexturing(false);
 
 	Render::BeginColor(Color(255, 128, 0, 255));
-	math::Vector3 temp = _fDirection * 3000;
+	math::Vector3 temp = math::Vector3(_fDirection.x, _fDirection.y, 0)  * 3000;
 	IPoint a = IPoint(_fPosition.x,_fPosition.y);
 	IPoint b = IPoint(_fPosition.x,_fPosition.y) + IPoint(temp.y,-temp.x);
 	Render::DrawLine(a, b);

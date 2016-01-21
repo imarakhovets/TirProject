@@ -2,8 +2,8 @@
 <GUI>
 	<Layer name="TestLayer">
     <Controls>
-      <TirSpace name="Tir"/>
-      <Gun name="Gun"/>
+   
+      <Math3Space name="Math3Space"/>
     </Controls>
 	</Layer>
 </GUI>

@@ -4,7 +4,7 @@
 PhysxSpace* PhysxObject::space;
 
 PhysxObject::PhysxObject(const std::string& name)
-	: Widget(name),_delete(false),_useGravity(false),_autoDelete(false)
+	: Widget(name),_delete(false),_useGravity(false),_autoDelete(false), _bounce(1), _stop(false)
 {
 	if (space!=0)
 	{
@@ -33,7 +33,7 @@ void PhysxObject::destroy()
 void PhysxObject::colision(math::Vector3 vNormal, float deep, PhysxObject* obj)
 {
 	//выдавливание из колизии
-	_fPosition += FPoint(vNormal.x,vNormal.y) * deep/2;
+	_fPosition += FPoint(vNormal.x,vNormal.y) * deep;
 
 	float a1 = vNormal.DotProduct(PointToVector(_lastSpeed));
 	float a2 = vNormal.DotProduct(PointToVector(obj->_lastSpeed));
@@ -44,6 +44,14 @@ void PhysxObject::colision(math::Vector3 vNormal, float deep, PhysxObject* obj)
 
 	_speed = FPoint(nSpeed1.x,nSpeed1.y);
 	//w2->_speed = FPoint(nSpeed2.x,nSpeed2.y);
+	//if (a1*a2 < 0)
+	//math::Vector3 v0 = PointToVector(_lastSpeed).Normalized();
+	//math::Vector3 v1 = PointToVector(obj->_lastSpeed).Normalized();
+	//float cosA = v0.DotProduct(v1)/(v0.Length()*v1.Length());
+//	if (cosA!=1)
+	if (deep>0.3)
+		_speed *= _bounce * obj->_bounce;
+
 }
 
 

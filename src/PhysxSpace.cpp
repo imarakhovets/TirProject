@@ -31,10 +31,16 @@ void PhysxSpace::setGravity(FPoint Gravity)
 bool PhysxSpace::colisionCheck(PhysxObject *w1, PhysxObject *w2)
 {
 	math::Vector3 vC;
+	math::Vector3 vC1(0,0,0);
 	if ((w1->_body == PhysxObject::BODY_CIRCLE) && ( w2->_body == PhysxObject::BODY_CIRCLE))
 	{
 		vC = math::Vector3(PointToVector(w1->_fPosition - w2->_fPosition)).Normalized();
 	}
+	//else if ((w1->_body == PhysxObject::BODY_BOX) && (w2->_body == PhysxObject::BODY_BOX))
+	//{
+	//	vC = math::Vector3(1,0,0).Normalized();
+	//	vC1 = math::Vector3(0, 1, 0).Normalized();
+	//}
 	else if PAIR(PhysxObject::BODY_SIDE,PhysxObject::BODY_CIRCLE)	
 		//(((w1->_body == PhysxObject::BODY_SIDE) && ( w2->_body == PhysxObject::BODY_CIRCLE)) || ((w1->_body == PhysxObject::BODY_CIRCLE) && ( w2->_body == PhysxObject::BODY_SIDE)))
 	{
@@ -59,7 +65,8 @@ bool PhysxSpace::colisionCheck(PhysxObject *w1, PhysxObject *w2)
 
 		vC = PointToVector(p->_fDirection);
 	}
-	else if PAIR(PhysxObject::BODY_CIRCLE,PhysxObject::BODY_BOX) 
+	else if (PAIR(PhysxObject::BODY_CIRCLE,PhysxObject::BODY_BOX) || ((w1->_body == PhysxObject::BODY_BOX) && (w2->_body == PhysxObject::BODY_BOX)))
+	
 	{
 		PhysxBox *p;
 
@@ -67,10 +74,6 @@ bool PhysxSpace::colisionCheck(PhysxObject *w1, PhysxObject *w2)
 			p = static_cast<PhysxBox*>(w1);
 		else
 			p = static_cast<PhysxBox*>(w2);
-
-
-
-
 
 		math::Vector3 vC[3];
 
@@ -131,6 +134,7 @@ bool PhysxSpace::colisionCheck(PhysxObject *w1, PhysxObject *w2)
 	float r1 = b1 - _a2;
 	float r2 =_a1 - b2;
 	float r = r1 * r2;
+
 	if (r<0)
 	{
 		float deep = math::min(math::abs(r1), math::abs(r2));
@@ -167,7 +171,7 @@ void PhysxSpace::Update(float dt)
 			if ((p->_delete == true) || (p2->_delete == true))
 				continue;
 
-			if ((!(p->_role == PhysxObject::ROLE_TARGET && p2->_role == PhysxObject::ROLE_TARGET)))// && (!(!p->_isTarget && !p2->_isTarget)))
+			//if ((!(p->_role == PhysxObject::ROLE_TARGET && p2->_role == PhysxObject::ROLE_TARGET)))// && (!(!p->_isTarget && !p2->_isTarget)))
 				colisionCheck(p, p2);	
 		}
 	}
@@ -182,10 +186,8 @@ void PhysxSpace::Update(float dt)
 		if (p->_delete)
 		{
 			p->_isVisible  = false;
-			/*
-			delete iter->get();
 			childs.erase(iter);
-			break;*/
+			break;
 		}
 	}
 }

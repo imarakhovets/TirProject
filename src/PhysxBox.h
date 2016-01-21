@@ -7,6 +7,7 @@ class PhysxBox : public PhysxObject
 	friend class PhysxSpace;
 public:
 	PhysxBox(const std::string& name, int hWidth, int hHeight);
+	PhysxBox(const std::string& name);
 	~PhysxBox();
 
 private:
